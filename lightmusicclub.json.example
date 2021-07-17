@@ -1,0 +1,9 @@
+{
+	"allow_nsfw": false,
+	"access_token": "token.json",
+	"danbooru_apikey": "key",
+	"danbooru_username": "username",
+	"picfile": "/tmp/lightmusicclub.png",
+	"instance": "https://example.com",
+	"visibility": "unlisted"
+}
