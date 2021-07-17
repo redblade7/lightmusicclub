@@ -77,6 +77,6 @@ Enjoy!
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 * `@redneonglow@gameliberty.club` / https://gameliberty.club/@redneonglow (backup)
 
-The author runs an instance of Light Music Club here, posting images every half hour:
+The author runs an instance of Light Music Club here, posting images (including NSFW) every half hour:
 
 * `@LightMusicClub@neckbeard.xyz` / https://neckbeard.xyz/LightMusicClub
