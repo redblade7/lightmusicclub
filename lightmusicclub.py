@@ -8,6 +8,10 @@
 # Copyright (c) 2021, redneonglow
 # All rights reserved.
 #
+# Includes code from Dark Web Mystery Bot v4 stable (20200403)
+# Copyright (c) 2019-20, redneonglow
+# All rights reserved.
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
 #
