@@ -73,10 +73,10 @@ Enjoy!
 
 **FEDIVERSE CONTACT INFO:**
 
-* `@redneonglow@neckbeard.xyz` / https://neckbeard.xyz/redneonglow (main)
+* `@redneonglow@bae.st` / https://bae.st/redneonglow (main)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 * `@redneonglow@gameliberty.club` / https://gameliberty.club/@redneonglow (backup)
 
 The author runs an instance of Light Music Club here, posting images (including NSFW) every half hour:
 
-* `@LightMusicClub@neckbeard.xyz` / https://neckbeard.xyz/LightMusicClub
+* `@LightMusicClub@bae.st` / https://bae.st/LightMusicClub
