@@ -5,7 +5,7 @@
 # A bot which posts artwork based on various idol anime franchises to the
 # Fediverse
 #
-# Copyright (c) 2021, redneonglow
+# Copyright (c) 2021-22, redneonglow
 # All rights reserved.
 #
 # Includes code from Dark Web Mystery Bot v4 stable (20200403)
@@ -37,7 +37,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,requests,secrets,sys
 
 #program version
-progver = "1 stable (20211218)"
+progver = "2 beta (20220604)"
 
 #anime franchises
 franchises = ["hibike!_euphonium","idolmaster","k-on!","love_live!","show_by_rock!!"]
@@ -124,7 +124,7 @@ def optversion():
 #shows license info
 def optlicense():
     print(verline())
-    print("\nCopyright (c) 2021, redneonglow\nAll rights reserved.\n")
+    print("\nCopyright (c) 2021-22, redneonglow\nAll rights reserved.\n")
     print("Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n")
     print("1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.")
     print("2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n")
