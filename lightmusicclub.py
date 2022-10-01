@@ -42,8 +42,8 @@ progver = "2 beta (20220604)"
 #anime franchises
 franchises = ["hibike!_euphonium","idolmaster","k-on!","love_live!","show_by_rock!!"]
 
-#ratings (safe is tripled to make NSFW odds 50/50)
-ratings = ["rating:safe","rating:safe","rating:safe","rating:sensitive","rating:questionable","rating:explicit"]
+#ratings (general is tripled to make NSFW odds 50/50)
+ratings = ["rating:general","rating:general","rating:general","rating:sensitive","rating:questionable","rating:explicit"]
 
 #open json access token
 def readtoken(token):
