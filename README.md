@@ -1,6 +1,6 @@
 # lightmusicclub
 
-**Light Music Club v2 stable (20221215)**
+**Light Music Club v3 beta (20221216)**
 
 Light Music Club, created by redneonglow, is a Fediverse picture bot for fans of idol anime. Light Music Club downloads random artwork from Danbooru based on various anime music franchises and posts them to the Fediverse.
 

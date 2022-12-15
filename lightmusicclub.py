@@ -37,7 +37,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,requests,secrets,sys
 
 #program version
-progver = "2 stable (20221215)"
+progver = "3 beta (20221216)"
 
 #anime franchises
 franchises = ["hibike!_euphonium","idolmaster","k-on!","love_live!","show_by_rock!!"]
