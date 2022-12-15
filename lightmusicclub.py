@@ -75,7 +75,7 @@ def readconfig(config):
 
 #download image from danbooru
 #returns true if downloaded picture is nsfw, false if sfw
-def downloadimage(user,key,picfile,nsfw):
+def downloadimage(user,key,picfile,picsize,nsfw):
     if nsfw:
         picrating = secrets.choice(ratings)
     else:
@@ -93,7 +93,17 @@ def downloadimage(user,key,picfile,nsfw):
     except json.JSONDecodeError:
         print("ERROR: Error requesting file from Danbooru!")
         sys.exit(1)
-    request = request[0]["large_file_url"]
+    
+    if picsize == "small":
+        request = request[0]["preview_file_url"]
+    else if picsize == "large":
+        request = request[0]["large_file_url"]
+    else if picsize == "full":
+        request = request[0]["file_url"]
+    else:
+        print("ERROR: Invalid picture size!\n")
+        sys.exit(1)
+         
     reqimage = requests.get(request)
     try:
         with open(picfile,"wb") as imagefile:
@@ -175,7 +185,7 @@ def main():
     elif args.postpic:
         configvalues = readconfig(args.postpic)
         ispicnsfw = downloadimage(configvalues['danbooru_username'],configvalues['danbooru_apikey'],configvalues['picfile'],configvalues['allow_nsfw'])
-        optpostpic(configvalues['instance'],configvalues['access_token'],configvalues['visibility'],configvalues['picfile'],ispicnsfw)
+        optpostpic(configvalues['instance'],configvalues['access_token'],configvalues['visibility'],configvalues['picfile'],configvalues['picsize'],ispicnsfw)
     else:
         print("ERROR: Invalid command!")
         parser.print_help()

@@ -39,6 +39,7 @@ Configuration for Light Music Club is in the form of a JSON file with the follow
 * `danbooru_apikey` Danbooru API key.
 * `danbooru_username` Danbooru username.
 * `picfile` Location of the downloaded picture file.
+* `picsize` Size of the picture to post. Valid values are "small", "large", and "full"
 * `instance` Fediverse instance.
 * `visibility` More information below.
 
