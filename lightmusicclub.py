@@ -188,8 +188,8 @@ def main():
         optpostver(configvalues['instance'],configvalues['access_token'])
     elif args.postpic:
         configvalues = readconfig(args.postpic)
-        ispicnsfw = downloadimage(configvalues['danbooru_username'],configvalues['danbooru_apikey'],configvalues['picfile'],configvalues['allow_nsfw'])
-        optpostpic(configvalues['instance'],configvalues['access_token'],configvalues['visibility'],configvalues['picfile'],configvalues['picsize'],ispicnsfw,configvalues['blacklist_controversial'])
+        ispicnsfw = downloadimage(configvalues['danbooru_username'],configvalues['danbooru_apikey'],configvalues['picfile'],configvalues['picsize'],configvalues['allow_nsfw'],configvalues['blacklist_controversial'])
+        optpostpic(configvalues['instance'],configvalues['access_token'],configvalues['visibility'],configvalues['picfile'],ispicnsfw)
     else:
         print("ERROR: Invalid command!")
         parser.print_help()
