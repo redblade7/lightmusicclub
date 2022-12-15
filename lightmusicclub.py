@@ -75,14 +75,18 @@ def readconfig(config):
 
 #download image from danbooru
 #returns true if downloaded picture is nsfw, false if sfw
-def downloadimage(user,key,picfile,picsize,nsfw):
+def downloadimage(user,key,picfile,picsize,nsfw,blacklist):
     if nsfw:
         picrating = secrets.choice(ratings)
     else:
         picrating = ratings[0]
 
     try:
-        urlstring = str("https://danbooru.donmai.us/posts.json?random=true&tags=" + secrets.choice(franchises) + "+" + picrating + "&rating=s&limit=1")
+        if blacklist:
+            urlstring = str("https://danbooru.donmai.us/posts.json?random=true&tags=" + secrets.choice(franchises) + "+" + picrating + "+-loli+-shota&rating=s&limit=1")
+        else:
+            urlstring = str("https://danbooru.donmai.us/posts.json?random=true&tags=" + secrets.choice(franchises) + "+" + picrating + "&rating=s&limit=1")
+            
         request = requests.get(urlstring,auth=(user,key))
     except ConnectionError as err:
         print("ERROR:",err,'\n')
@@ -185,7 +189,7 @@ def main():
     elif args.postpic:
         configvalues = readconfig(args.postpic)
         ispicnsfw = downloadimage(configvalues['danbooru_username'],configvalues['danbooru_apikey'],configvalues['picfile'],configvalues['allow_nsfw'])
-        optpostpic(configvalues['instance'],configvalues['access_token'],configvalues['visibility'],configvalues['picfile'],configvalues['picsize'],ispicnsfw)
+        optpostpic(configvalues['instance'],configvalues['access_token'],configvalues['visibility'],configvalues['picfile'],configvalues['picsize'],ispicnsfw,configvalues['blacklist_controversial'])
     else:
         print("ERROR: Invalid command!")
         parser.print_help()

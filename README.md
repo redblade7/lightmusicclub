@@ -36,6 +36,7 @@ Configuration for Light Music Club is in the form of a JSON file with the follow
 
 * `allow_nsfw` Allow the bot to possibly download and post NSFW artwork. Valid values are true or false.
 * `access_token` Location of the Mastodon access token. See above for instructions on how to create the token file.
+* `blacklist_controversial` Do not post pictures with the controversial tags "loli" and "shota". Valid values are true or false. Note that enabling this makes the query more than 2 tags and thus requires a Danbooru Gold account. Keep in mind though that enabling this option has no effect unless `allow_nsfw` is true. 
 * `danbooru_apikey` Danbooru API key.
 * `danbooru_username` Danbooru username.
 * `picfile` Location of the downloaded picture file.
