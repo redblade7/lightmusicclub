@@ -100,9 +100,9 @@ def downloadimage(user,key,picfile,picsize,nsfw,blacklist):
     
     if picsize == "small":
         request = request[0]["preview_file_url"]
-    else if picsize == "large":
+    elif picsize == "large":
         request = request[0]["large_file_url"]
-    else if picsize == "full":
+    elif picsize == "full":
         request = request[0]["file_url"]
     else:
         print("ERROR: Invalid picture size!\n")
