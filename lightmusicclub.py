@@ -5,7 +5,7 @@
 # A bot which posts artwork based on various idol anime franchises to the
 # Fediverse
 #
-# Copyright (c) 2021-22, redneonglow
+# Copyright (c) 2021-23, redneonglow
 # All rights reserved.
 #
 # Includes code from Dark Web Mystery Bot v4 stable (20200403)
