@@ -37,10 +37,10 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,requests,secrets,sys
 
 #program version
-progver = "3 beta (20221216)"
+progver = "3 beta (20230424)"
 
 #anime franchises
-franchises = ["hibike!_euphonium","idolmaster","k-on!","love_live!","show_by_rock!!"]
+franchises = ["bocchi_the_rock!","hibike!_euphonium","idolmaster","k-on!","love_live!","show_by_rock!!"]
 
 #ratings (general is tripled to make NSFW odds 50/50)
 ratings = ["rating:general","rating:general","rating:general","rating:sensitive","rating:questionable","rating:explicit"]
